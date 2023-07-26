@@ -17,10 +17,26 @@
      .font-lato{
         font-family: 'Lato', sans-serif;
      }
+     .slider-1{
+        background-image: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url(./images/banner1.png);
+      }
+      .slider-2{
+        background-image:linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url(./images/banner3.png);
+      }
+      .slider-3{
+        background-image: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url(./images/banner4.png);
+      }
+
+      .slider-1,.slider-2,.slider-3{
+        background-position:center,center;
+        background-size: cover,cover;
+        background-repeat: no-repeat;
+        width: 100%;
+      }
  </style>
 </head>
 <body class="font-lato">
-        <header class="lg:mx-32 mx-3 mt-5">
+        <header class="lg:mx-32 mx-5 mt-5 mb-32">
               <!-- navbar section start here . it's a main part -->
               <div class="navbar bg-base-100 lg:bg-[#F85559] lg:h-[100px] lg:rounded-[600px] lg:px-10">
                 <div class="navbar-start">
@@ -68,7 +84,57 @@
                 </div>
               </div>
               <!-- banner section start here .it's a main part-->
-              <!-- fruits positioning start here.it's a bonus part -->
+              <section class="mb-10">                  
+               <!-- slider 1 -->
+               <div class="carousel w-full lg:mt-10 mt-3 relative">
+                <div id="slide1" class="carousel-item relative w-full h-[500px]">
+                        <div class="slider-1 rounded-md lg:h-[500px] h-[70%]  text-center pt-28 ">
+                            <h3 class="lg:text-6xl text-2xl  font-extrabold mb-5 text-[#fff]">Exotic tastes at your </br> doorstep</h3>
+                            <p class="lg:w-1/2 w-[95%] m-auto text-[#fff] font-poppins text-base font-normal leading-6">We supply highly quality organic products.</p>
+                           <button class="btn btn-error bg-[#F85559] mt-5 text-white">Shop Now</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40">
+                    <a href="#slide3" class="text-white bg-black px-4 py-2 rounded-[100%]">❮</a> 
+                    <a href="#slide2" class="text-white bg-black px-4 py-2 rounded-[100%]">❯</a>
+                  </div>
+                </div> 
+                <!-- slider 2  -->
+                <div id="slide2" class="carousel-item  relative w-full h-[500px]">
+                    <div class="slider-2 text-center pt-28 rounded-md lg:h-[500px] h-[70%]">
+                        <h3 class="lg:text-6xl text-2xl font-extrabold mb-5 text-[#fff]">Exotic tastes at your </br> doorstep</h3>
+                        <p class="lg:w-1/2 w-[95%] m-auto text-[#fff] font-poppins text-base font-normal leading-6">We supply highly quality organic products.</p>
+                        <button class="btn btn-error bg-[#F85559] mt-5 text-white">Shop Now</button>
+                </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40">
+                    <a href="#slide1" class="text-white bg-black px-4 py-2 rounded-[100%]">❮</a> 
+                    <a href="#slide3" class="text-white bg-black px-4 py-2 rounded-[100%]">❯</a>
+                  </div>
+                </div> 
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full h-[500px]">
+                    <div class="slider-3 text-center pt-28 rounded-md lg:h-[500px] h-[70%]">
+                        <h3 class="lg:text-6xl text-2xl  font-extrabold mb-5 text-[#fff]">Exotic tastes at your </br> doorstep</h3>
+                        <p class="lg:w-1/2 w-[95%] m-auto text-[#fff] font-poppins text-base font-normal leading-6">We supply highly quality organic products.</p>
+                        <button class="btn btn-error bg-[#F85559] mt-5 text-white">Shop Now</button>
+                </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-40">
+                    <a href="#slide2" class="text-white bg-black px-4 py-2 rounded-[100%]">❮</a> 
+                    <a href="#slide1" class="text-white bg-black px-4 py-2 rounded-[100%]">❯</a>
+                  </div>
+                </div> 
+              </div>
+
+            <!-- fruits positioning start here.it's a bonus part --> 
+                   <div class="lg:block hidden">
+                    <div class="flex justify-center gap-16 bg-[#fff] shadow-md w-[70%] m-auto rounded-lg py-5 -mt-20 ml-[70px] absolute ">
+                        <img src="./images/fruit1.png" alt="" srcset="">
+                        <img src="./images/fruit2.png" alt="" srcset="">
+                        <img src="./images/fruit3.png" alt="" srcset="">
+                        <img src="./images/fruit4.png" alt="" srcset="">
+                   </div>
+                   </div>
+
+              </section>
         </header>
         <main>
              <!-- deal of the day section start here.it's main and bonus part -->
